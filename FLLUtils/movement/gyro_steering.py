@@ -113,7 +113,7 @@ def gyroTurn(turnAmount, speed = 150, correction_speed = 30, correction_amount =
     resetMotors()
 
 
-def gyroTurnUntillLine(port, light_threshold, speed):
+def gyroTurnUntilLine(port, light_threshold, speed):
     sensor = ColorSensor(port)
     print(sensor.reflection())
     while sensor.reflection() > light_threshold:
